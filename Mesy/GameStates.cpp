@@ -70,6 +70,7 @@ namespace MESY {
         _player->setPos(x);
         
         //sets which tiles to be clear of mines in the start, now its the player's choice, if upper = 0 it will show tile, if under = 0, it will have no bomb
+        
         _grid_upper[x][1] = 0;
         _grid_under[x][1] = 0; _grid_under[x - 1][1] = 0; _grid_under[x + 1][1] = 0; _grid_under[x][2] = 0; _grid_under[x - 1][2] = 0; _grid_under[x + 1][2] = 0;
         
@@ -92,9 +93,11 @@ namespace MESY {
                 _grid_under[i][j] = n;
                 if (rand() % 50 == 0) {
                     _grid_upper[i][j] = 10;
+                    
                 }
             }
         }
+
     }
     
     void GameStates::HandleInput() {
@@ -119,7 +122,7 @@ namespace MESY {
                     Setup(x);
                 }
                 
-                if (_player->PlayerChosen()) {
+                /*if (_player->PlayerChosen()) {
                     if ((event.key.code) == (sf::Mouse::Left)) {
                         _grid_upper[x][y] = 0; //If tile is clicked, it being 0 will later mean it will display texture underneath.
                         if (_grid_under[x][y] == 9) {
@@ -141,7 +144,7 @@ namespace MESY {
                             _grid_upper[x][y] = _upper_duplicate[x][y];
                         }
                     }
-                }
+                }*/
             }
             int result = 0;
             if (event.type == sf::Event::KeyPressed && !_player->PlayerMoving() && _player->PlayerChosen()) {
@@ -198,13 +201,13 @@ namespace MESY {
             for (int j = 1; j <= BOARD_HEIGHT; j++) {
                 //If tile underneath is 9 then it is a mine, and upper grid == 0, hence will show all
                 //Tiles underneath the surface texture, ending the game
-                if (_grid_under[x][y] == 9 && _grid_upper[x][y] == 0) {
+                /*if (_grid_under[x][y] == 9 && _grid_upper[x][y] == 0) {
                     if (life == 0) {
                         _grid_upper[i][j] = 0;
                     }
                     if (life == 0) { music.stop(); }
                     _player->Explode(x, y, life == 0);
-                }// Restart Game
+                }// Restart Game*/
                 
                 if (_grid_upper[i][j] == 10) {
                     _Shape.setTexture(&this->_data->assets.GetTexture("Tiles"), false);

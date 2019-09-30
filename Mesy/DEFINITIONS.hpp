@@ -40,3 +40,5 @@
 #define PLAYER_WALKING "walking.png"
 #define EXPLOSION_FILEPATH "explosion.png"
 #define LIFE_COUNT "lifecount.png"
+#define HOW_TO_PLAY_BUTTON "HowToButton.png"
+#define HOW_TO_PLAY_SCREEN "HowToPlay.png"
