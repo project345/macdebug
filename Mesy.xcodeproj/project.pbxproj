@@ -111,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		336C46302341E9EE007EC744 /* gameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gameOver.png; path = Photos/gameOver.png; sourceTree = "<group>"; };
 		DE8518BB23419FF8001F6E6C /* Mesy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mesy; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8518BE23419FF8001F6E6C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DE8518C62341A140001F6E6C /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = "Mesy/SFML-2.5.1/extlibs/freetype.framework"; sourceTree = "<group>"; };
@@ -254,6 +255,7 @@
 		DE8518B223419FF8001F6E6C = {
 			isa = PBXGroup;
 			children = (
+				336C46302341E9EE007EC744 /* gameOver.png */,
 				DE8519832341BB1A001F6E6C /* HowToButton.png */,
 				DE8519842341BB1A001F6E6C /* HowToPlay.png */,
 				DE8519812341BB0B001F6E6C /* HowTo.cpp */,
@@ -459,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE85192E2341A7D6001F6E6C /* gameOver.png in Sources */,
 				DE8519852341BB1A001F6E6C /* HowToButton.png in Sources */,
 				DE8519862341BB1A001F6E6C /* HowToPlay.png in Sources */,
 				DE8519822341BB0B001F6E6C /* HowTo.hpp in Sources */,
@@ -479,7 +482,6 @@
 				DE8519352341A7D6001F6E6C /* intro_story4.png in Sources */,
 				DE85193F2341A7D6001F6E6C /* Title1.png in Sources */,
 				DE85193E2341A7D6001F6E6C /* Title.png in Sources */,
-				DE85192E2341A7D6001F6E6C /* gameOver.png in Sources */,
 				DE8519412341A7D6001F6E6C /* Title3.png in Sources */,
 				DE8519322341A7D6001F6E6C /* intro_story1.png in Sources */,
 				DE8519432341A7D6001F6E6C /* wall2.png in Sources */,
